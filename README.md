@@ -6,6 +6,8 @@ This project consists of 2 jupyter notebooks:
 2. [Automatica_RandomForest.ipynb](https://github.com/fadhlifadh/Automatidata/blob/main/Automatica_RandomForest.ipynb)
   - This is to demonstrate how random forest model is built
 
+For the data dictionary, please refer to [Data Dictionary](https://github.com/fadhlifadh/Automatidata/blob/main/Data_Dictionary.ipynb)
+
 ## Overview
 The goal of ths project was to build a multiple linear regression to predict taxi fares before the ride and
 to build random forest model to predict high customer gratuity or not. 
