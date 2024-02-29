@@ -18,9 +18,8 @@ value of 0.868. This means that 86.8% of the variance in the fare_amount variabl
 the model managed to interpret that for every 1 mile traveled, the fare increased by a mean of $2.00.
 
 Also, for the high customer gratuity, the taxi drivers would receive alert from the app about the customers who are 
-likely to tip, since drivers depend on tips. The final random forest model performed with XX% accuracy and XX% precision 
-determining what features were most important in separating low tippers from high tippers. Based on the model, the duration, 
-distance, and cost of the trip were most influential in determining a generous tipper (>20%) vs a non-generous one (<20%). 
+likely to tip, since drivers depend on tips. The final XGBoost model performed with 70.62% accuracy and 68.65% precision. 
+Based on the model, vendorID feature were most influential in determining a generous tipper (>20%) vs a non-generous one (<20%). 
 
 ## Business Understanding
 According to salary.com the average salary for a New York Taxi Driver is around $38,707 (Please note, this data might not
@@ -43,17 +42,19 @@ The model performance on test data is as below:
 3. MAE: 2.133
 4. MSE: 14.326
 5. RMSE: 3.785
+ 
 This means that 86.8% of the variance in the fare_amount variable is described by the model.
 
 Meanwhile, for the random forest model, the champion model is XGBoost Classifier model with the below score:
-1. Precision:
-2. Recall:
-3. F1:
-4. Accuracy
-We know that VendorID, predicted_fare, mean_duration, and mean_distance are the most important features, but we don't know
-how they influence tipping. This would require further exploration and it is interesting that VendorID is the most predictive
-feature. This seems to indicate that one of the two vendors tends to attract more generous customers. It may be worth
-performing statistical tests on the different vendors to examine this further in the future.
+1. Precision: 0.6864
+2. Recall: 0.8133
+3. F1: 0.7445
+4. Accuracy: 0.7062
+
+We know that VendorID is the most important features, but we don't know how they influence tipping.
+This would require further exploration and it is interesting that VendorID is the most predictive feature.
+This seems to indicate that one of the two vendors tends to attract more generous customers. It may be worth performing
+statistical tests on the different vendors to examine this further in the future.
 
 ## Conclusion
 These models can benefit taxi divers in knowing the estimation of fare price as well as if they will be tipped generously
