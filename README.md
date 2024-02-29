@@ -9,11 +9,11 @@ This project consists of 2 jupyter notebooks:
 For the data dictionary, please refer to [Data Dictionary](https://github.com/fadhlifadh/Automatidata/blob/main/Data_Dictionary.ipynb)
 
 ## Overview
-The goal of ths project was to build a multiple linear regression to predict taxi fares before the ride and
+The goal of this project was to build a multiple linear regression to predict taxi fares before the ride and
 to build random forest model to predict high customer gratuity or not. 
 
 In the other words, the taxi drivers would at least receive the estimation amount of taxi fares after the customers manage
-to hop in and state their drop off location. The final multiple linear regression permormed quite well with R<sup>2</sup> 
+to hop in and state their drop off location. The final multiple linear regression performed quite well with R<sup>2</sup> 
 value of 0.868. This means that 86.8% of the variance in the fare_amount variable is described by the model. In simple words,
 the model managed to interpret that for every 1 mile traveled, the fare increased by a mean of $2.00.
 
@@ -32,7 +32,7 @@ livable wage.
 The NYC Taxi and Limousine Commission data came from [NYC.gov](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 The data recorded in this case study has 22,699 rows with 18 features. The features included the information of vendor, pickup
 and dropoff time, amount of tip as well as fare amount etc. From exploratory data analysis (EDA) activity, a lot of outliers
-mainly on the amount of fare feature have been elimated in order to come up with a more reasonable data for modelling purpose.
+mainly on the amount of fare feature have been ellimated in order to come up with a more reasonable data for modelling purpose.
 Some of the features which we think were redundant were dropped,
 
 ## Modeling and Evaluation 
